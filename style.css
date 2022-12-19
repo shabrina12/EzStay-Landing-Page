@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+body {
+    background-color: #faf5f5;
+    margin: 2rem 7rem;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-brand {
+    font-weight: 700;
+    font-size: 30px;
+}
+.nav-item {
+    font-weight: 600;
+    width: 120px;
+    text-align: center;
+    font-size: 1rem;
+}
+.signup-btn {
+    background-color: #FF7048;
+    color: white;
+    border-radius: 12px;
+}
+header {
+    background-image: url("./assets/Hero\ Picture.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    border-radius: 30px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-title h1 {
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 80px;
+    color: #24201D;
+}
+.header-title {
+    width: 40%;
+    margin-left: 100px;
+}
+.weather-box span {
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 27px;
+    color: #24201D;
+    opacity: 0.6;
+}
+.subheader {
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 1000px;
+    border-radius: 20px;
+}
+.subheader-search a {
+    background-color: #FC8868;
+    border-radius: 20px;
+    padding: 20px;
+}
+.subheader span {
+    opacity: 0.5;
+    margin-right: 10px;
+}
+.activity-col {
+    border-left: 4px solid #E3E3E3;
+    border-right: 4px solid #E3E3E3;  
+}
+
+/*--------------------------- BUILDING SECTION ----------------------*/
+.building-container {
+    position: relative;
+    padding-top: 12rem;
+}
+.card-img-overlay {
+    height: 30px;
+    width: 60px;
+    top: 10%;
+    left: 75%;
+    color: #3A8375;
+    border-radius: 30px;
+    padding: 3px 10px 0;
+    background-color: #DAFFF8;
+}
+.card, .card img {
+    /* width: 380px; */
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+}
+.content-building .card:hover {
+    border: 2px solid #3A8375;
+}
+.card-text h4 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #040405;
+}
+.card-text .price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #3A8375;
+}
+.card-text span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ADADAD;
+}
+.text-container {
+    width: 30%;
+}
+.text-container h2 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 39px;
+}
+.text-container p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    opacity: 0.5;
+}
+/*--------------------------- GALLERY SECTION ----------------------*/
+.content {
+    position: relative;
+}
+.content .content-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border-radius: 15px;
+    /*transition time and effect*/
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+/* setting hover properties */
+.content:hover .content-overlay {
+    opacity: 0.4;
+}
+.content-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+.content-details {
+    position: absolute;
+    color: white;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.content:hover .content-details {
+    opacity: 1;
+}
+.content-text {
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 21px;
+    color: #ADADAD;
+}
+.rating {
+    height: 35px;
+    color: #3A8375;
+    border-radius: 30px 0 0 30px;
+    padding: 5px 10px 0;
+    background-color: #DAFFF8;
+}
+.details-down, .details-down-small {
+    border-radius: 50%;
+    background-color: #FC8868;
+}
+.details-down {
+    height: 80px;
+    width: 80px;
+}
+.details-down-small {
+    height: 60px;
+    width: 60px;
+}
+
+@media screen and (max-width: 1120px) {
+    body {
+        margin: 2rem;
+    }
+    header {
+        min-height: 300px;
+    }
+    .header-title h1 {
+        font-size: 3rem;
+        line-height: 50px;
+    }
+    .header-title {
+        width: 100%;
+        margin-left: 10px;
+    }
+    .text-container {
+        width: 80%;
+    }
+    .subheader {
+        bottom: -80%;
+        max-width: 500px;
+    }
+    .activity-col {
+        border-left: none;
+        border-right: none;  
+    }
+}
+@media screen and (max-width: 770px) {
+    .header-title h1 {
+        font-size: 2rem;
+    }
+    .subheader {
+        bottom: -100%;
+        max-width: 450px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .subheader {
+        bottom: -80%;
+        max-width: 300px;
+    }
+}
