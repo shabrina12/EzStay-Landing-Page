@@ -74,7 +74,7 @@ header {
 /*--------------------------- BUILDING SECTION ----------------------*/
 .building-container {
     position: relative;
-    padding-top: 12rem;
+    padding-top: 14rem;
 }
 .card-img-overlay {
     height: 30px;
@@ -109,7 +109,7 @@ header {
 }
 .card-text span {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 21px;
     color: #ADADAD;
 }
@@ -209,23 +209,40 @@ header {
         bottom: -80%;
         max-width: 500px;
     }
+    .subheader h4, .subheader span {
+        font-size: 1rem;
+    }
+    .subheader-search a {
+        border-radius: 15px;
+        padding: 15px;
+    }
     .activity-col {
         border-left: none;
         border-right: none;  
     }
 }
 @media screen and (max-width: 770px) {
+    header {
+        max-height: 800px;
+    }
     .header-title h1 {
         font-size: 2rem;
     }
     .subheader {
-        bottom: -100%;
+        bottom: -90%;
         max-width: 450px;
+    }
+    .subheader h4, .subheader span {
+        font-size: 14px;
+    }
+    .subheader-search a {
+        border-radius: 10px;
+        padding: 10px;
     }
 }
 @media screen and (max-width: 550px) {
     .subheader {
-        bottom: -80%;
-        max-width: 300px;
+        bottom: -110%;
+        max-width: 280px;
     }
 }
