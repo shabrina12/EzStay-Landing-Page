@@ -5,6 +5,7 @@ body {
     margin: 2rem 7rem;
     font-family: 'Poppins', sans-serif;
 }
+/*--------------------------- NAVBAR ----------------------*/
 .navbar-brand {
     font-weight: 700;
     font-size: 30px;
@@ -20,6 +21,8 @@ body {
     color: white;
     border-radius: 12px;
 }
+
+/*--------------------------- HEADER ----------------------*/
 header {
     background-image: url("./assets/Hero\ Picture.png");
     background-repeat: no-repeat;
@@ -50,17 +53,22 @@ header {
 }
 .subheader {
     position: absolute;
-    bottom: -30%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    max-width: 1000px;
+    width: 80%;
+    padding: 3rem 2rem;
     border-radius: 20px;
 }
-.subheader-search a {
+.subheader-details {
+    flex: 20;
+}
+.subheader-search {
     background-color: #FC8868;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 20px;
+    flex: 1;
 }
 .subheader span {
     opacity: 0.5;
@@ -87,7 +95,6 @@ header {
     background-color: #DAFFF8;
 }
 .card, .card img {
-    /* width: 380px; */
     border-radius: 12px;
     cursor: pointer;
     border: none;
@@ -191,30 +198,22 @@ header {
     body {
         margin: 2rem;
     }
-    header {
-        min-height: 300px;
+    .header-title {
+        width: 100%;
+        margin-left: 10px;
     }
     .header-title h1 {
         font-size: 3rem;
         line-height: 50px;
     }
-    .header-title {
-        width: 100%;
-        margin-left: 10px;
-    }
     .text-container {
         width: 80%;
     }
-    .subheader {
-        bottom: -80%;
-        max-width: 500px;
+    .subheader-details {
+        gap: 1rem;
     }
     .subheader h4, .subheader span {
         font-size: 1rem;
-    }
-    .subheader-search a {
-        border-radius: 15px;
-        padding: 15px;
     }
     .activity-col {
         border-left: none;
@@ -222,27 +221,24 @@ header {
     }
 }
 @media screen and (max-width: 770px) {
-    header {
-        max-height: 800px;
-    }
     .header-title h1 {
         font-size: 2rem;
     }
     .subheader {
-        bottom: -90%;
-        max-width: 450px;
+        padding: 2rem 1rem;
     }
     .subheader h4, .subheader span {
         font-size: 14px;
     }
-    .subheader-search a {
-        border-radius: 10px;
+    .subheader-search {
         padding: 10px;
     }
 }
 @media screen and (max-width: 550px) {
     .subheader {
-        bottom: -110%;
-        max-width: 280px;
+        padding: 1rem;
+    }
+    .subheader-details {
+        flex-direction: column;
     }
 }
